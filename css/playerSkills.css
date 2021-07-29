@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --theFont:'Monoton', cursive;
+    --WhityColo:white;
+    --background:black;
+}
+body{
+    margin: 0;
+    padding: 0;
+background-color: black;
+color: var(--WhityColo);
+
+
+}
+
+
+nav{
+    position:fixed;
+    opacity: 0.8;
+        display: flex;
+        width: 100vw;
+        background-color:var(--background);
+        height: 20%;
+        top: 0;
+        
+    }
+    
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        width: 99vw;
+        
+    
+    }
+    
+    nav img{
+    height: 100%;
+    width: 250px;
+    filter: contrast(140%);
+    
+    }
+    
+    li a{
+    color:var(--WhityColo);
+    font-family: 'Monoton', cursive;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 2s;
+    padding: 0px 50px;
+    
+    }
+    li a:hover{
+        color:red;
+        font-size: xx-large;
+    }
+  
+    
+span{
+    font-size: 50px;
+    color: rgba(255, 0, 0, 0.801);
+}
+
+
+.Container{
+    
+   width: 96vw;
+   height: 100vh;
+   margin-top: 10%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   /* margin-left: 5%; */
+}
+
+
+#vidHeader{
+    font-family: var(--theFont);font-size: 40px; word-spacing: 5px ;
+    text-align: center;
+    width: 50%;
+    height: 100px;
+    margin-top: 10%;
+    margin-left: 25%;
+    border-left: rgba(255, 0, 0, 0.658) 3px double;
+    border-right: var(--WhityColo) 3px double;
+}
+.PlayersVid {
+    width: 30%;
+    font-family: fantasy;
+    color: white;
+    /* background-color:rgba(245, 245, 245, 0.329); */
+    margin: 15px;
+    font-size: 25px;
+    border: wheat 1px solid;
+    align-content: center;
+    text-align: center;
+    transition: 1s;
+
+
+
+}
+
+.PlayersVid:hover {
+    width: 33%;
+    border-radius: 30%;
+    
+
+
+}
+.PlayersVid iframe{
+width: 400px;
+height: 300px;
+opacity: 0.7;
+filter: contrast(130%);
+filter: drop-shadow(2px 3px 4px 4px);
+
+}
+.PlayersVid img{
+    height: 200px;
+    width: 200px;
+    
+}
+
+.PlayersInfo{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25%;
+    margin-bottom: 28%;
+}
+
+.PforPlayers{
+width: 50vw;
+border-top: white 2px solid;
+border-bottom: wheat 2px solid;
+padding: 25px;
+margin: 15px;
+
+}
+.PforPlayers p{
+font-family: fantasy;
+color: wheat;
+
+}
+
+
+.PforPlayers h1{
+font-family: var(--theFont);
+text-decoration-style: dotted;
+font-size: 30px;
+word-spacing: 15px;
+letter-spacing: 5px;
+
+
+}
+.PforPlayers span{
+    color: red;
+    font-size: 20px;
+}
+
+
+
+#ContactUs{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    margin-top: 20%;
+    
+    }
+      
+    
+    #ContactUs h1{
+        font-size: 30px;
+        font-family: var(--theFont);
+    
+    
+    }
+    #ContactUs h3{
+        font-size: 25px;
+        position: relative;
+        margin:auto;
+        text-align: center;
+    
+    }
+    form{
+        border: double 4px var(--WhityColo);
+       padding: 50px;
+       text-align: center;
+       font-family: sans-serif;
+       background-color: rgba(255, 255, 255, 0.63);
+    
+    }
+    .formHeader h1{
+        word-spacing: 30px;
+    }
+
+
+
+footer{
+    
+    background-color: rgb(255, 0, 0);
+    height: 100%;
+    width: 100%;
+    
+    }
+    footer img{
+        width: 95px;
+        height: 79px;
+    }
+
+    @media screen and (max-width: 426px) {
+        nav {
+          height: 20%;
+          position:relative
+        }
+      
+        nav ul {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        nav img {
+          width: 25%;
+        }
+      
+        li a {
+          font-size: 15px;
+          transition: 2s;
+          padding: 0px 10px;
+          letter-spacing: 3px;
+        }
+        li a:hover {
+          color: var(--WhityColo);
+          font-size: 25px;
+        }
+      
+        span {
+          font-size: 15px;
+          color: var(--WhityColo);
+        }
+        .Container{
+    
+            width: 50%;
+            height: 100vh;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        
+         }
+         #vidHeader h1{
+             font-size: xx-large;}
+/*           
+            font-family: var(--theFont);font-size: 40px; word-spacing: 5px ;
+            text-align: center;
+            width: 50%;
+            height: 100px;
+            margin-top: 10%;
+            margin-left: 25%;
+            border-left: rgba(255, 0, 0, 0.658) 3px double;
+            border-right: var(--WhityColo) 3px double;
+        } */
+        .PlayersVid {
+            width: 100vw;
+            font-family: fantasy;
+            color: white;
+            /* background-color:rgba(245, 245, 245, 0.329); */
+            margin: 15px;
+            font-size: 25px;
+            border: wheat 1px solid;
+            align-content: center;
+            text-align: center;
+            transition: 1s;
+            flex-direction:column ;
+        
+        }
+
+        footer{
+            display: none;
+        }
+        .ContactUs{
+            display: none;
+        }
+        .formHeader{display: none;}
+        form{
+            display: none;
+        }
+    }

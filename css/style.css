@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Nosifer&display=swap");
+
+:root {
+  --theFont: "Monoton", cursive;
+  --WhityColo: white;
+  --background: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--WhityColo);
+  background-color: var(--background);
+}
+nav {
+  /* position: fixed; */
+  opacity: 0.8;
+  display: flex;
+  width: 100vw;
+  background-color: var(--background);
+  height: 20%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  /* width: 100vw; */
+  /*  */
+}
+
+nav img {
+  height: 100%;
+}
+
+li a {
+  color: rgb(255, 0, 0);
+  font-family: var(--theFont);
+  text-decoration: none;
+  font-size: 20px;
+  transition: 2s;
+  padding: 0px 40px;
+  letter-spacing: 3px;
+}
+li a:hover {
+  color: var(--WhityColo);
+  font-size: xx-large;
+}
+
+span {
+  font-size: 50px;
+  color: var(--WhityColo);
+}
+
+#LockerRoom {
+  width: 99vw;
+  height: auto;
+  opacity: 1;
+  z-index: -1000;
+}
+.AboutUs {
+  width: 100%;
+  
+}
+.imAd{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.imAd h1 {
+  font-family: "Monoton", cursive;
+  font-size: 40px;
+  text-align: center;
+  border-top: red 3px solid;
+  border-bottom: white 3px solid;
+  border-radius: 10%;
+  word-spacing: 30px;
+}
+.imAd h1:hover {
+  color: red;
+}
+.imAd h1 span {
+  font-size: 80px;
+}
+.iframe {
+  /* position: relative; */
+  animation-name: adVideo;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  position: absolute;
+  height: 300px;
+  width: 550px;
+  /* right: 30%; */
+  top: 50%;
+}
+
+.imAd .headerAnimation {
+  /* displaynone; */
+  right: 33%;
+  top: 25%;
+  animation-name: vidHeader;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  position: absolute;
+}
+@keyframes vidHeader {
+  0% {
+    right: 5%;
+    top: 25%;
+  }
+  100% {
+    right: 30%;
+    top: 25%;
+  }
+}
+
+@keyframes adVideo {
+  0% {
+    right: 60%;
+    top: 50%;
+  }
+  100% {
+    right: 30%;
+    top: 50%;
+  }
+}
+#aboutUsText {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+  word-spacing: 7px;
+  letter-spacing: 3px;
+  height: 60vh;
+}
+.theAgency {
+  width: 50%;
+  height: 100%;
+  box-shadow: 0px 4px 16px 0 rgba(255, 255, 255, 0.3);
+}
+.theAgency h1 {
+  text-align: center;
+}
+
+.playersTitle {
+  text-align: center;
+  font-family: "Nosifer", cursive;
+  font-size: 40px;
+  letter-spacing: 4px;
+  height: 40vh;
+  text-decoration: underline;
+}
+
+.thePlayers {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pics img {
+  width: auto;
+  height: 400px;
+  filter: grayscale(1) blur(3px) contrast(100%);
+  transition: 0.5s;
+}
+.pics img:hover {
+  filter: grayscale(0) blur(0px) contrast(120%);
+}
+
+.pics h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#aboutUsText {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+  word-spacing: 7px;
+  letter-spacing: 3px;
+  height: 60vh;
+}
+
+.myBall {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.myBall img {
+  border-radius: 80%;
+  height: 100%;
+  width: auto;
+  animation-name: myball;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+/* #TheSecBall{
+display: flex;
+justify-content: center;
+height:50vh ;
+
+}
+#secBall img{
+border-radius: 80%;
+height: 200px;
+width: auto; */
+
+@keyframes myball {
+  /* 0%{margin-right: 600px;}
+
+   100%{margin-left: 600px;} */
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#ContactUs {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  margin-top: 20%;
+}
+
+#ContactUs h1 {
+  font-size: 30px;
+  font-family: var(--theFont);
+}
+#ContactUs h3 {
+  font-size: 25px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+form {
+  border: double 4px var(--WhityColo);
+  padding: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: rgba(255, 255, 255, 0.493);
+}
+.formHeader h1 {
+  word-spacing: 30px;
+}
+footer {
+  background-color: rgb(255, 0, 0);
+  height: 100%;
+  width: 100%;
+}
+footer img {
+  width: 95px;
+  height: 79px;
+}
+#Contract {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  margin-top: 7%;
+}
+
+#Contract img {
+  border: solid 3px black;
+  border-radius: 50px;
+  height: auto;
+  width: 300px;
+  transition: 3s;
+  box-shadow: white 10px;
+}
+#Contract img:hover {
+  width: 500px;
+}
+/* .iframe {
+  width: 560px;
+  height: 350px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 20%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav img {
+    width: 10%;
+  }
+
+  li a {
+    font-size: 15px;
+    transition: 2s;
+    padding: 0px 10px;
+    /* letter-spacing: 3px; */
+  }
+  li a:hover {
+    color: var(--WhityColo);
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 15px;
+    color: var(--WhityColo);
+  }
+
+
+
+  .AboutUs {
+    width: 100%;
+    margin-bottom: 50%;
+    
+  }
+  .imAd{
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+      margin-bottom: 60%;
+  }
+  
+  
+  .imAd h1 {
+    display: none;
+    font-family: "Monoton", cursive;
+    font-size: 40px;
+    text-align: center;
+    border-top: red 3px solid;
+    border-bottom: white 3px solid;
+    border-radius: 10%;
+    word-spacing: 30px;
+  }
+  .imAd h1:hover {
+    color: red;
+  }
+  .imAd h1 span {
+    font-size: 80px;
+  }
+  .iframe {
+    /* position: relative; */
+    animation-name: adVideo;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* position: absolute; */
+    height: 230px;
+    margin-bottom: 100%;
+    
+  
+  }
+  
+  /* .imAd .headerAnimation {
+    display: flex;
+    right: 31%;
+    top: 25%;
+    animation-name: vidHeader;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    position: absolute;
+
+
+  } */
+  .playersTitle {
+    text-align: center;
+    font-family: "Nosifer", cursive;
+    font-size: 15px;
+    letter-spacing: 4px;
+    height: 0;
+    text-decoration: underline;
+    margin-top: 75%;
+  }
+  .myBall img {
+    border-radius: 80%;
+    height: 80%;
+    width: auto;
+    animation-name: myball;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-bottom: 50%;
+  }
+  .formHeader h1 {
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  nav {
+    height: 20%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav img {
+    width: 25%;
+  }
+
+  li a {
+    font-size: 15px;
+    transition: 2s;
+    padding: 0px 10px;
+    letter-spacing: 3px;
+  }
+  li a:hover {
+    color: var(--WhityColo);
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 15px;
+    color: var(--WhityColo);
+  }
+
+
+
+  .AboutUs {
+    width: 100%;
+    margin-bottom: 50%;
+    
+  }
+  .imAd{
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+      margin-bottom: 60%;
+  }
+  
+  
+  .imAd h1 {
+    display: none;
+    font-family: "Monoton", cursive;
+    font-size: 40px;
+    text-align: center;
+    border-top: red 3px solid;
+    border-bottom: white 3px solid;
+    border-radius: 10%;
+    word-spacing: 30px;
+  }
+  .imAd h1:hover {
+    color: red;
+  }
+  .imAd h1 span {
+    font-size: 80px;
+  }
+  .iframe {
+    /* position: relative; */
+    animation-name: adVideo;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* position: absolute; */
+    height: 230px;
+    margin-bottom: 100%;
+    
+  
+  }
+  
+  .imAd .headerAnimation {
+    /* display: none; */
+    right: 31%;
+    top: 25%;
+    animation-name: vidHeader;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    position: absolute;
+
+
+  }
+  .playersTitle {
+    text-align: center;
+    font-family: "Nosifer", cursive;
+    font-size: 15px;
+    letter-spacing: 4px;
+    height: 0;
+    text-decoration: underline;
+    margin-top: 75%;
+  }
+  .myBall img {
+    border-radius: 80%;
+    height: 80%;
+    width: auto;
+    animation-name: myball;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-bottom: 50%;
+  }
+  .formHeader h1 {
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 10px;
+  }
+}

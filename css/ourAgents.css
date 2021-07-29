@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --theFont:'Monoton', cursive;
+    --WhityColo:white;
+    --background:black;
+}
+body{
+  
+    margin: 0;
+    padding: 0;
+background-color: black;
+color: var(--WhityColo);
+
+
+}
+#myBG{
+    width: 100%;
+    margin-left: 7%;
+    z-index: -5;
+}
+
+
+nav{
+    position:fixed;
+    opacity: 0.8;
+        display: flex;
+        width: 100vw;
+        background-color:var(--background);
+        height: 20%;
+        top: 0;
+        
+    }
+    
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        
+    
+    }
+    
+    nav img{
+    height: 100%;
+    width: 250px;
+    filter: contrast(140%);
+    
+    }
+    
+    li a{
+    color:var(--WhityColo);
+    font-family: 'Monoton', cursive;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 2s;
+    padding: 0px 50px;
+    
+    
+    }
+    li a:hover{
+        color:red;
+        font-size: xx-large;
+    }
+    
+span{
+    font-size: 30px;
+    color: rgba(255, 0, 0, 0.801);
+}
+.knowTheAgentsContainer{
+    display: flex;
+    margin-top: 14%;
+    height: 30%;
+    justify-content: center;
+}
+#myBG{
+width: 50vw;
+height: 100vh;
+
+}
+.knowTheAgents{
+    height: 150px;
+    font-family: fantasy;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    box-shadow: 0px 3px 8px 0 rgba(255, 255, 255, 0.3);
+    border-top: wheat 1px solid;
+}
+
+.AgentsTitle{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+.AgentsTitle h1{
+    font-size: 45px;
+  font-family:var(--theFont) ;
+
+}
+.AgentContainer{
+    width: 98vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+   
+}
+.TheAgentsPics{
+width: 30%;
+font-family: monospace;
+font-size: 20px;
+letter-spacing: 3px;
+align-content: center;
+text-align: center;
+filter: contrast(100%);
+opacity: 0.8;
+overflow: hidden;
+
+}
+.TheAgentsPics:hover{
+    filter:contrast(140%);
+    opacity: 1;
+}
+
+
+.TheAgentsPics img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    animation-name: picsFromRight;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+   
+}
+
+@keyframes picsFromRight {
+    0%{margin-right: -800px;}
+    25%{margin-right: -400px}
+    50%{margin-right: 0px}
+    100%{margin:auto}
+}
+.TheAgentsPics a{
+    color: red;
+    text-decoration: none;
+    
+}
+
+.finalH{
+    margin-top: 40%;
+    font-family: var(--theFont);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-spacing: 8px;
+    letter-spacing: 5px ;
+
+}
+
+
+footer{
+    
+     background-color: rgb(255, 0, 0);
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+
+
+    
+    }
+    footer img{
+        width: 95px;
+        height: 79px;
+    }
+
+
+    @media screen and (max-width:768px) {
+        nav {
+            height: 5%;
+          }
+        
+          nav ul {
+            display: flex;
+            flex-direction: row;
+          }
+        
+          nav img {
+            width: 10%;
+            height: auto;
+          }
+        
+          li a {
+            font-size: 15px;
+            transition: 2s;
+            padding: 0px 10px;
+            /* letter-spacing: 3px; */
+          }
+          li a:hover {
+            color: var(--WhityColo);
+            font-size: 25px;
+          }
+          #myBG{
+            display: flex;
+            justify-content: center;
+            height: 10%;
+            
+          }
+          #myBG img{
+            margin-top: 10%;
+           margin-right: 15%;
+            width: 50%;
+            height: 30vh;
+          }
+          .knowTheAgents{
+              width: 45%;
+            height: 10%;
+            font-family: fantasy;
+            font-size: 15px;
+            letter-spacing: 3px;
+            word-spacing: 4px;
+            box-shadow: 0px 3px 8px 0 rgba(255, 255, 255, 0.3);
+            border-top: wheat 1px solid;
+        }
+        .AgentContainer{
+            width: 98vw;
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .TheAgentsPics p{
+            width: 15%;
+            font-family: monospace;
+            font-size: 20px;
+            letter-spacing: 3px;
+            align-content: center;
+            text-align: center;
+          
+        }
+        .TheAgentsPics a{
+            color: red;
+            text-decoration: none;
+            font-size: 15px;
+            
+        }
+        
+      
+        .TheAgentsPics img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            animation-name: picsFromRight;
+            animation-duration: 7s;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+           
+        }
+        /* #Location{
+    
+            display: flex;
+            justify-content: center;
+                margin-bottom: 40%;
+                width: 700px;
+            
+            } */
+
+    }
